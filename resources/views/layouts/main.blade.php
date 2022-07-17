@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
     {{-- font spotify --}}
 
+    {{-- aos animation --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {{-- aos animation --}}
+
     {{-- icon fontawesome google --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     {{-- icon fontawesome google --}}
@@ -86,16 +90,16 @@
                     </div>
                     </button> --}}
                 </div>
-                <div class="offcanvas-body" style="margin-top: -35px">
+                <div class="offcanvas-body" style="margin-top: -35px" >
                     <ul class="navbar-nav px-3 py-0 mb-2 mb-lg-0 ms-auto text-white">
-                        <li class="nav-item"><a class="nav-link fs-1" aria-current="page" href="#">Login</a></li>
+                        <li class="nav-item"><a class="nav-link fs-1" aria-current="page" href="#" >Login</a></li>
                         <li class="nav-item"><a class="nav-link fs-1" href="#">Sign Up</a></li>
                         <li class="nav-item"><span class="material-symbols-outlined mt-3">maximize</span></li>
-                        <li class="nav-item"><a class="nav-link fs-5">Premium</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fs-5">Bantuan</a></li>
-                        <li><a href="" class="nav-link fs-5">Download</a></li>
-                        <li><a href="" class="nav-link fs-5">Privasi</a></li>
-                        <li><a href="" class="nav-link fs-5">Persyaratan</a></li>
+                        <li class="nav-item li_canvas"><a class="nav-link fs-5">Premium</a></li>
+                        <li class="nav-item li_canvas"><a href="" class="nav-link fs-5">Bantuan</a></li>
+                        <li class="nav-item li_canvas"><a href="" class="nav-link fs-5">Download</a></li>
+                        <li class="nav-item li_canvas"><a href="" class="nav-link fs-5">Privasi</a></li>
+                        <li class="nav-item li_canvas" data-aos="fade-left"><a href="" class="nav-link fs-5">Persyaratan</a></li>
     
                     </ul>
                 </div>
@@ -105,11 +109,11 @@
         {{-- offcanvas --}}
 
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper" class="">
+        <div id="page-content-wrapper" class="" >
             <!-- Top navigation-->
             <header class="navbar navbar-expand-lg navbar-light" style="background-color:#101010">
                 <div class="container-fluid">
-                    <a class="navbar-brand py-0 text-white" href="#">
+                    <a class="navbar-brand  text-white" href="#">
                         <img src="/image/logo/icon_sp4.png" class="d-lg-none d-md-block" alt="" class="img-fluid" style="width: 2em;">
                         {{-- <img src="/image/logo/logo.png" class=" d-lg-block d-none" alt="" style="width: 7em"> --}}
 
@@ -180,6 +184,16 @@
           x.classList.toggle("change");
         }
         </script>
+    {{-- aos animation --}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // once:true,
+            duration:1200,
+        });
+    </script>
+    {{-- aos animation --}}
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
