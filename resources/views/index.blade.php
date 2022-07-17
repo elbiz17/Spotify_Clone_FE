@@ -12,7 +12,7 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
-                    <div class="overlay">
+                    <div class="overlay d-lg-block d-none">
                         <div class="play">
                             <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
                         </div>
@@ -28,7 +28,7 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
-                    <div class="overlay">
+                    <div class="overlay d-lg-block d-none">
                         <div class="play">
                             <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
                         </div>
@@ -44,7 +44,7 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
-                    <div class="overlay">
+                    <div class="overlay d-lg-block d-none">
                         <div class="play">
                             <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
                         </div>
@@ -60,7 +60,7 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
-                    <div class="overlay">
+                    <div class="overlay d-lg-block d-none">
                         <div class="play">
                             <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
                         </div>
