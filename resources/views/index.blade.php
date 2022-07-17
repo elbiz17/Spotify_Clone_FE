@@ -12,6 +12,11 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
+                    <div class="overlay">
+                        <div class="play">
+                            <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
+                        </div>
+                    </div>
                     <div class="card_text pt-2">
                         <h6 class="text-lg-start text-md-center">Puncak Klasemen</h6>
                         <p class="overflow-hidden d-none d-lg-block" style="font-size:12px">Lorem ipsum dolor sit amet consectetur ?</p>
@@ -23,16 +28,10 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
-                    <div class="card_text pt-2 ">
-                        <h6 class="text-lg-start text-md-center">Puncak Klasemen</h6>
-                        <p class="overflow-hidden d-none d-lg-block" style="font-size:12px">Lorem ipsum dolor sit amet consectetur ?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md py-2 px-2" >
-                <div class="cards">
-                    <div class="image">
-                        <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
+                    <div class="overlay">
+                        <div class="play">
+                            <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
+                        </div>
                     </div>
                     <div class="card_text pt-2 ">
                         <h6 class="text-lg-start text-md-center">Puncak Klasemen</h6>
@@ -45,26 +44,38 @@
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
+                    <div class="overlay">
+                        <div class="play">
+                            <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
+                        </div>
+                    </div>
                     <div class="card_text pt-2 ">
                         <h6 class="text-lg-start text-md-center">Puncak Klasemen</h6>
                         <p class="overflow-hidden d-none d-lg-block" style="font-size:12px">Lorem ipsum dolor sit amet consectetur ?</p>
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-md py-2" >
+            <div class="col-md py-2 px-2" >
                 <div class="cards">
                     <div class="image">
                         <img class="img-fluid" src="https://source.unsplash.com/random/150x160" alt="">
                     </div>
+                    <div class="overlay">
+                        <div class="play">
+                            <img class="img-fluid" style="width:3rem" src="/image/logo/Spotify-Play-Button.png" alt="">
+                        </div>
+                    </div>
                     <div class="card_text pt-2 ">
-                        <h6>Puncak Klasemen</h6>
+                        <h6 class="text-lg-start text-md-center">Puncak Klasemen</h6>
                         <p class="overflow-hidden d-none d-lg-block" style="font-size:12px">Lorem ipsum dolor sit amet consectetur ?</p>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
 </section>
+
+
 
 
 {{-- <section> --}}
