@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\LoginSpotifyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SpotifyController;
+
 
 
 /*
@@ -20,3 +22,7 @@ use App\Http\Controllers\SpotifyController;
 // });
 
 Route::get('/', [SpotifyController::class, 'index']);
+
+Route::get('/login', [LoginSpotifyController::class, 'index']);
+
+Route::get('/create', [SpotifyController::class, 'create']);
