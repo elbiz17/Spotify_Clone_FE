@@ -28,16 +28,13 @@
 </head>
 <body>
 
-    <div class="d-flex" id="wrapper">
+    <div class="wrapper_container d-flex">
         <!-- Sidebar-->
-        <div class="d-none d-lg-block" id="sidebar-wrapper">
-            {{-- <div class="sidebar-heading border-bottom bg-light"> --}}
-                <a href="" class="navbar-brand px-3 mt-3  d-flex">
-                    <img src="/image/logo/logo.png" alt="" style="width: 8em">
-                </a>
-            {{-- </div> --}}
+        <div class="sidebar d-none d-lg-block">
+            <a href="" class="navbar-brand px-3 mt-3  d-flex">
+                <img src="/image/logo/logo.png" alt="" style="width: 8em">
+            </a>
             <div class="list-group list-group-flush">
-        
                 <ul class="nav flex-column mt-3 ">
                     <li class="nav-item">
                         <a href="" class="nav-link align-items-center d-flex justify-content-start"><span class="material-symbols-outlined  me-2" style="font-size:1.8rem">
@@ -76,19 +73,11 @@
         <aside>
             <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #101010">
                 <div class="offcanvas-header">
-                    {{-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> --}}
                     <button type="button" class=" ms-auto border-0" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #101010">
                         <span class="material-symbols-outlined text-white" style="font-size:2.5rem">
                             close
                         </span>
                     </button>
-                    {{-- <button class="ms-auto  border-0  d-md-none collapsed   collapsed" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" style="background-color: #101010;top:0right:0">
-                    <div class="container" >
-                        <span class="material-symbols-outlined text-white" style="font-size:2.5rem">
-                            close
-                        </span>
-                    </div>
-                    </button> --}}
                 </div>
                 <div class="offcanvas-body" style="margin-top: -35px" >
                     <ul class="navbar-nav px-3 py-0 mb-2 mb-lg-0 ms-auto text-white">
@@ -108,69 +97,69 @@
 
         {{-- offcanvas --}}
 
+
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper" class="" >
+        <div class="page_wrapper" >
             <!-- Top navigation-->
-            <header class="navbar navbar-expand-lg navbar-light" style="background-color:#101010">
-                <div class="container-fluid">
-                    <a class="navbar-brand  text-white" href="#">
-                        <img src="/image/logo/icon_sp4.png" class="d-lg-none d-md-block" alt="" class="img-fluid" style="width: 2em;">
-                        {{-- <img src="/image/logo/logo.png" class=" d-lg-block d-none" alt="" style="width: 7em"> --}}
-
-                    </a>
-                    <button class="navbar-toggle border-0  ms-auto  d-lg-none collapsed   collapsed" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #101010">
-                    <div class="container" >
-                        <span class="material-symbols-outlined text-white" style="font-size:2.5rem">
-                            menu
-                            </span>
-                    </div>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto" >
-                        <li class="nav-item align-items-center d-flex">
-                            <a href="" class="nav-link btn btn-dark align-items-center d-flex  rounded-circle p-1 disabled">
-                                <span class="material-symbols-outlined" style="font-size: 1.2em;margin-left:3px">
-                                    arrow_back_ios
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="nav-item align-items-center d-flex">
-                            <a href="" class="nav-link btn btn-dark align-items-center d-flex rounded-circle p-1 disabled">
-                                <span class="material-symbols-outlined " style="font-size: 1.2em">
-                                    arrow_forward_ios
-                                    </span></a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto text-white">
-                        <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Support</a>
-                        </li>
-                
-                        <li class="nav-item">
-                        <a class="nav-link ">Download</a>
-                        </li>
-                        <li class="nav-item">
-                        <a href="" class=" nav-link disabled text-white">|</a>
-                        </li>
-                        <li class="nav-item">
-                        <a href="" class="nav-link">Sign Up</a>
-                        </li>
-                        <li>
-                        <a href="" class="btn btn-dark login">Log in</a>
-                        </li>
-
-                    </ul>
+            <div class="header"> 
+                <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#101010">
+                    <div class="container-fluid">
+                        <a class="navbar-brand  text-white" href="#">
+                            <img src="/image/logo/icon_sp4.png" class="d-lg-none d-md-block" alt="" class="img-fluid" style="width: 2em;">
+                        </a>
+                        <button class="navbar-toggle border-0  ms-auto  d-lg-none collapsed   collapsed" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"  style="background-color: #101010">
+                        <div class="container" >
+                            <span class="material-symbols-outlined text-white" style="font-size:2.5rem">
+                                menu
+                                </span>
+                        </div>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto" >
+                            <li class="nav-item align-items-center d-flex">
+                                <a href="" class="nav-link btn btn-dark align-items-center d-flex  rounded-circle p-1 disabled">
+                                    <span class="material-symbols-outlined" style="font-size: 1.2em;margin-left:3px">
+                                        arrow_back_ios
+                                        </span>
+                                </a>
+                            </li>
+                            <li class="nav-item align-items-center d-flex">
+                                <a href="" class="nav-link btn btn-dark align-items-center d-flex rounded-circle p-1 disabled">
+                                    <span class="material-symbols-outlined " style="font-size: 1.2em">
+                                        arrow_forward_ios
+                                        </span></a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto  text-white">
+                            <li class="nav-item">
+                                 <a class="nav-link " aria-current="page" href="#">Premium</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
                     
+                            <li class="nav-item">
+                                <a class="nav-link ">Download</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a href="" class=" nav-link disabled text-white">|</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Sign Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/login" class="nav-link btn btn-dark login">Log in</a>
+                            </li>
+    
+                        </ul>
+                        
+                        </div>
                     </div>
-                </div>
-            </header>
+                </nav>
+            </div>
 
-            <main style="background-color:#1d1d1d">
+            <main class="main" style="background-color:#1d1d1d">
                 <!-- Page content-->
-                
                     @yield('konten')
                 
             </main>
