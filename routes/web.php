@@ -25,4 +25,6 @@ Route::get('/', [SpotifyController::class, 'index']);
 
 Route::get('/login', [LoginSpotifyController::class, 'index']);
 
+Route::get('/register', [RegisterSpotifyController::class, 'index']);
+
 Route::get('/create', [SpotifyController::class, 'create']);
