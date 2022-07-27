@@ -17,10 +17,22 @@
    border-radius: 50px !important;
    background-color: blue !important;
 }
+.btn_register{
+   width: 380px ;
+   margin: auto;
+   max-width: 100%;
+   display: inline;
+   color: #7b7b7b !important ;
+   font-weight: 650 !important;
+   
+   line-height: 37px !important;
+   border-radius: 50px !important;
+   background-color: blue !important;
+}
 
 .login_container{
    display: flex;
-   padding: 0 10px 0;
+   padding: 0 20px 0;
    justify-content: center;
    flex-direction: column;
    gap: 10px;
@@ -30,7 +42,7 @@
 .divider{
    background-color: #d9dadc;
    height: 2px;
-   width: 450px ;
+   width: 380px ;
    margin: auto;
    max-width: 100%;
    display: flex;
@@ -52,7 +64,7 @@
    
 }
 .form_container{
-   padding: 10px;
+   padding: 20px;
 
 }
 .form{
