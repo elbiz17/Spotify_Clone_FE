@@ -82,7 +82,7 @@
                 <div class="offcanvas-body" style="margin-top: -35px" >
                     <ul class="navbar-nav px-3 py-0 mb-2 mb-lg-0 ms-auto text-white">
                         <li class="nav-item"><a class="nav-link fs-1" aria-current="page" href="/login" >Login</a></li>
-                        <li class="nav-item"><a class="nav-link fs-1" href="#">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link fs-1" href="/register">Sign Up</a></li>
                         <li class="nav-item"><span class="material-symbols-outlined mt-3">maximize</span></li>
                         <li class="nav-item li_canvas"><a class="nav-link fs-5">Premium</a></li>
                         <li class="nav-item li_canvas"><a href="" class="nav-link fs-5">Bantuan</a></li>
@@ -145,7 +145,7 @@
                                  <a href="" class=" nav-link disabled text-white">|</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Sign Up</a>
+                                <a href="/register" class="nav-link">Sign Up</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/login" class="nav-link btn btn-dark login">Log in</a>

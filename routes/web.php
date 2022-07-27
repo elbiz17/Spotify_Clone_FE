@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\LoginSpotifyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SpotifyController;
+use App\Http\Controllers\LoginSpotifyController;
+use App\Http\Controllers\RegisterSpotifyController;
 
 
 
