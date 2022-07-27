@@ -13,4 +13,10 @@ class SpotifyController extends Controller
             'title' => 'Home'
         ]);
     }
+
+    public function create(){
+        return view('login/post/create');
+    }
+
+    
 }

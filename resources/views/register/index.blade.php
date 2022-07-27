@@ -22,13 +22,16 @@
 
       <form action="" class="form">
          <div class="mb-1">
-            <label for="username"><strong>Email address or username</strong></label>
-            <input type="text" name="username" id="username" class="form-control mt-2 mb-2" placeholder="Email address or username"> 
-            
-            <label for="username"><strong>Email address or username</strong></label>
+            <label for="username"><strong>What's your email?</strong></label>
             <input type="text" name="username" id="username" class="form-control mt-2 mb-2" placeholder="Email address or username"> 
 
-            <label for="username"><strong>Password</strong></label> 
+            <label for="username"><strong>Confirm your email</strong></label>
+            <input type="text" name="username" id="username" class="form-control mt-2 mb-2" placeholder="Email address or username"> 
+
+            <label for="username"><strong>Create a password</strong></label> 
+            <input type="text" name="username" id="username" class="form-control mt-2 " placeholder="Password"> 
+
+            <label for="username"><strong>What should we call you?</strong></label> 
             <input type="text" name="username" id="username" class="form-control mt-2 " placeholder="Password"> 
          </div>
          <h6>Forgot your password?</h6>

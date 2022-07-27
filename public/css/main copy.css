@@ -55,48 +55,82 @@
 
 /* css sidebar */
 
+.sidebar{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
 
-.wrapper_container{
-  display: flex;
-  position: relative;
+    /* width: 120px; */
+    background-color: #000000 !important;
 }
-.wrapper_container .sidebar{
-  /* position: fixed; */
-  z-index: 999;
-  width: 15rem;
-  min-height: 100vh;
-  background-color: #000;
-}
-.sidebar .list-group{
-  width: 15rem;
-}
-.wrapper_container .page_wrapper{
-  width: 100%;
-  /* margin-left: 240px; */
-  /* background: #333; */
-}
-.header{
-  z-index: 20;
 
-  /* position: fixed; */
+.sidebar ul li a{
+    color: white !important;
+    font-size: 14px !important;
+    
+}
 
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+
+
+
+  /* #wrapper {
+    overflow-x: hidden;
+  }
+   */
+  #sidebar-wrapper {
+    min-height: 100vh;
+    background-color: #000 !important;
+    z-index: 100;
+    /* position: fixed; */
+
+    /* margin-left: -15rem; */
+    transition: margin 0.25s ease-out;
+  }
   
-  width:100%;
-  max-width: auto;
+  /* #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  } */
   
-}
-
-/* .main{
-  margin-top: 59px;
-} */
-
-
-
-
-
-
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
   
-
+  #page-content-wrapper {
+    min-width: 100vw;
+    /* margin-left: 230px; */
+  }
+  
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    /* body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+      margin-left: -15rem;
+    } */
+  }
  
   .offcanvas{
     min-width: 100vw;
@@ -192,7 +226,6 @@
     min-width: 100px;
     padding: 10px;
     position: relative;
-    cursor: pointer;
 }
 .cards:hover{
   background-color: #282828;
@@ -207,7 +240,7 @@
   transition: .5s;
   opacity: 0;
   position: absolute;
-  bottom: 75px;
+  bottom: 89px;
   height: 41px;
   right: 2px;
   transform: translate(-50%, -50%);
