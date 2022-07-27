@@ -7,7 +7,7 @@
    <div class="container-fluid col-md text-center">
       <div class="py-4"><img src="/image/logo/logo_login.png" class="img-fluid" style="width: 11rem" alt=""></div>
    </div>
-   <strong><h2 class="text-center py-3 fw-bold">Sign up for free to start listening.</h2></strong>
+   <strong><h3 class="text-center py-3 fw-bold h2">Sign up for free to start listening.</h3></strong>
    <div class=" login_container">
          <a href="" class="btn_register btn btn-primary " style="background-color: #3b5998 !important; color:#fff !important"><i class="fa-brands fa-facebook-f px-2"></i>  CONTINUE WITH FACEBOOK</a>
          {{-- <a href="" class="btn_login btn btn-primary"  style="background-color: #000 !important; color:#fff !important"><i class="fa-brands fa-apple px-2"></i>  CONTINUE WITH APPLE</a> --}}
@@ -16,7 +16,7 @@
          <div class="or mx-auto">
             <p class="text-center  ">OR</p>
          </div>
-         <div class="divider"></div>   
+         <div class="divider_signUp"></div>   
    </div>
    <div class="form_container">
 
@@ -71,7 +71,7 @@
          <div class="d-flex justify-content-center mb-3" style="margin-top: -15px">
             <a href="" class="btn btn-success text-dark fw-bold" style="background-color: #1ed760 !important;width:150px;line-height:36px;border-radius:30px;border:none"><span>SIGN UP</span></a>
          </div>
-         <p class="text-center">Have an account? <a href="">Log in</a></p>
+         <p class="text-center">Have an account? <a href="/login">Log in</a></p>
    
       </form> 
    </div>

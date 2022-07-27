@@ -39,7 +39,17 @@
    margin-bottom: 20px;
 }
 
-.divider{
+.divider_signIn{
+   background-color: #d9dadc;
+   height: 2px;
+   width: 450px ;
+   margin: auto;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   transform: translateY(-25px);
+}
+.divider_signUp{
    background-color: #d9dadc;
    height: 2px;
    width: 380px ;

@@ -17,7 +17,7 @@
          <div class="or mx-auto">
             <p class="text-center  ">OR</p>
          </div>
-         <div class="divider"></div>   
+         <div class="divider_signIn"></div>   
    </div>
    <div class="form_container">
 
@@ -44,7 +44,7 @@
             <h4 class="text-center fw-bold">Don't have an account?</h4>
          </div>
          <div class="d-flex justify-content-center ">
-            <a href="" class="btn   flex-fill sign_up">SIGN UP FOR SPOTIFY</a>
+            <a href="/register" class="btn   flex-fill sign_up">SIGN UP FOR SPOTIFY</a>
          </div>
    
       </form> 
