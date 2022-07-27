@@ -6,7 +6,11 @@
 
 <section class="">
    <div class="container-fluid col-md border-bottom text-center">
-      <div class="py-4"><img src="/image/logo/logo_login.png" class="img-fluid" style="width: 11rem" alt=""></div>
+      <div class="py-4">
+         <a href="/">
+            <img src="/image/logo/logo_login.png" class="img-fluid" style="width: 11rem" alt=""></div>
+         </a>
+      </div>
    </div>
    <p class="text-center pt-5"><strong>To continue, log in to Spotify.</strong></p>
    <div class=" login_container">

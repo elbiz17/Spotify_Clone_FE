@@ -5,7 +5,10 @@
 
 <section class="">
    <div class="container-fluid col-md text-center">
-      <div class="py-4"><img src="/image/logo/logo_login.png" class="img-fluid" style="width: 11rem" alt=""></div>
+      <div class="py-4">
+         <a href="/">
+            <img src="/image/logo/logo_login.png" class="img-fluid" style="width: 11rem" alt=""></div>
+         </a>
    </div>
    <strong><h3 class="text-center py-3 fw-bold h2">Sign up for free to start listening.</h3></strong>
    <div class=" login_container">
