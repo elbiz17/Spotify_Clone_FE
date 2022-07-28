@@ -843,3 +843,26 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 }
 
   /* slider card*/
+
+
+  /* css of footer */
+
+.footer{
+  margin-left:34px !important ;
+}
+.footer a{
+  text-decoration: none;
+  color: #a7a2a2;
+}
+.footer a:hover{
+  text-decoration:underline ;
+  color: white;
+}
+@media only screen and (max-width:768px){
+  .footer{
+    margin-left:20px !important ;
+  }
+  
+}
+
+  /* end off css footer */

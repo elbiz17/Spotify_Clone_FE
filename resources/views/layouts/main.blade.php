@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/Circular/*">
+
+   <script src="https://kit.fontawesome.com/5c2c5b6638.js" crossorigin="anonymous"></script>
+
     {{-- font spotify --}}
     <link href="//db.onlinewebfonts.com/c/1ccdd11fd9d1d81756c40d7acb17d0aa?family=Circular+Spotify+Tx+T+Light" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,7 +114,7 @@
                         <div class="container" >
                             <span class="material-symbols-outlined text-white" style="font-size:2.5rem">
                                 menu
-                                </span>
+                            </span>
                         </div>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarSupportedContent">
