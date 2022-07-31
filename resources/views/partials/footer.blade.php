@@ -1,4 +1,4 @@
-<section class="">
+<section class="container">
    <footer class="footer py-3">
       <div class="row  text-white">
          <div class="col-md">
@@ -26,10 +26,12 @@
                </div>
             </div>
          </div>
-         <div class="col-md-2  me-5 mt-3">
-            <a href="" class="btn btn-dark  rounded-circle p-1 me-3 "><i class="fa-brands fa-instagram  px-2"></i></a>
-            <a href="" class="btn btn-dark  rounded-circle p-1 me-3"><i class="fa-brands fa-twitter   px-2"></i></a>
-            <a href="" class="btn btn-dark  rounded-circle p-1 "><i class="fa-brands fa-facebook-f  px-2"></i></a>
+         <div class="col-md-3  mt-3 ">
+            <div class="text-md-end" style="margin-right: 37px">
+               <a href="" class="btn btn-dark  rounded-circle p-1 me-3 "><i class="fa-brands fa-instagram  px-2"></i></a>
+               <a href="" class="btn btn-dark  rounded-circle p-1 me-3"><i class="fa-brands fa-twitter   px-2"></i></a>
+               <a href="" class="btn btn-dark  rounded-circle p-1 "><i class="fa-brands fa-facebook-f  px-2"></i></a>
+            </div>
 
          </div>
       </div>
