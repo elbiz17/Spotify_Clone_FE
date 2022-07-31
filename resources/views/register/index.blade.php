@@ -23,46 +23,47 @@
    </div>
    <div class="form_container">
 
-      <form action="" class="form">
+      <form action="/register" method="post" class="form">
+         @csrf
          <div class="mb-1">
-            <label for="username"><h6>What's your email?</h6></label>
-            <input type="text" name="email" id="username" class="form-control" placeholder="Enter your email."> 
+            <label for="email"><h6>What's your email?</h6></label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email."> 
             <span><a href="">Use phone number instead.</a></span> <br>
 
-            <label for="username" class="pt-3"><h6>Confirm your email</h6></label>
-            <input type="text" name="username" id="username" class="form-control  mb-2" placeholder="Email address or username"> 
+            <label for="email2" class="pt-3"><h6>Confirm your email</h6></label>
+            <input type="email" name="email2" id="email2" class="form-control  mb-2" placeholder="Enter your email again"> 
 
-            <label for="username"><h6 class="pt-3">Create a password</h6></label> 
-            <input type="text" name="username" id="username" class="form-control " placeholder="Password"> 
+            <label for="password"><h6 class="pt-3">Create a password</h6></label> 
+            <input type="password" name="password" id="password" class="form-control " placeholder="Create a password"> 
 
             <label for="username"><h6 class="pt-3">What should we call you?</h6></label> 
-            <input type="text" name="username" id="username" class="form-control  " placeholder="Password">
+            <input type="text" name="username" id="username" class="form-control  " placeholder="Enter a profile name">
             <span>This appears on your profile.</span> <br>
             
-            <label for="username"><h6 class="pt-3">What's your date of birth?</h6></label> <br>
-            <input type="date" name="username" id="username" class="form-control  " placeholder="Password">
+            <label for="date"><h6 class="pt-3">What's your date of birth?</h6></label> <br>
+            <input type="date" name="date" id="date" class="form-control" >
 
             <label for="username"><h6 class="pt-3">What's your gender?</h6></label> <br>
             <div class="d-flex flex-column">
                <div>
-                  <input type="radio" class="me-2 " name="username" id="username">
+                  <input type="radio" class="me-2 " name="male" id="male">
                   <label for="" class="me-3">Male</label>
          
-                  <input type="radio" class="me-2" name="username" id="username">
+                  <input type="radio" class="me-2" name="female" id="female">
                   <label for="" class="me-3">Female</label>
            
-                  <input type="radio" class="me-2" name="username" id="username">
+                  <input type="radio" class="me-2" name="nonbinary" id="nonbinary">
 
                   <label for="" class="me-3">Non-binary</label>
                </div>
             </div>
             <div class=" mt-4">
                <div class="d-inline-flex align-items-start " style="">
-                  <input type="checkbox" name="username" id="username" class="me-2 mt-1"> 
+                  <input type="checkbox"  class="me-2 mt-1"> 
                   <label for="username"  style="font-size: 1em;">I would prefer not to receive marketing messages from Spotify</label>
                </div>
                <div class="d-flex align-items-start mt-2" style="">
-                  <input type="checkbox" name="username" id="username" class="me-2 mt-1"> 
+                  <input type="checkbox"  class="me-2 mt-1"> 
                   <label for="username"  style="font-size:1em;" >Share my registration data with Spotify's content providers for marketing purposes.</label>
                </div>
             </div>
@@ -72,7 +73,7 @@
             <p class="text-center" style="font-size: 0.8em">To learn more about how Spotify collects, uses, shares and protects your personal data, please see Spotify's Privacy Policy.</p>
          </div>
          <div class="d-flex justify-content-center mb-3" style="margin-top: -15px">
-            <a href="" class="btn btn-success text-dark fw-bold" style="background-color: #1ed760 !important;width:150px;line-height:36px;border-radius:30px;border:none"><span>SIGN UP</span></a>
+            <button type="submit" class="btn btn-success text-dark fw-bold" style="background-color: #1ed760 !important;width:150px;line-height:36px;border-radius:30px;border:none"><span>SIGN UP</span></button>
          </div>
          <p class="text-center">Have an account? <a href="/login">Log in</a></p>
    

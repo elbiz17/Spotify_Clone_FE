@@ -27,7 +27,7 @@
 
     {{-- bs 5 --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Spotify Clone</title>
+    <title>Spotify Clone | {{ $title }}</title>
 </head>
 <body>
 
@@ -40,7 +40,7 @@
             <div class="list-group list-group-flush">
                 <ul class="nav flex-column mt-3 ">
                     <li class="nav-item">
-                        <a href="" class="nav-link align-items-center d-flex justify-content-start"><span class="material-symbols-outlined  me-2" style="font-size:1.8rem">
+                        <a href="/dashboard" class="nav-link align-items-center d-flex justify-content-start"><span class="material-symbols-outlined  me-2" style="font-size:1.8rem">
                             Home
                             </span>Home</a>
                     </li>
@@ -104,6 +104,66 @@
         <!-- Page content wrapper-->
         <div class="page_wrapper" >
             <!-- Top navigation-->
+            @auth
+            <div class="header"> 
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#202020;height:70px!important">
+                    <div class="container-fluid">
+                        <a class="navbar-brand  text-white" href="#">
+                            <img src="/image/logo/icon_sp4.png" class="d-lg-none d-md-block" alt="" class="img-fluid" style="width: 2em;">
+                        </a>
+                        <button class="navbar-toggle border-0  ms-auto  d-lg-none collapsed   collapsed" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"  style="background-color: #202020">
+                        <div class="container" >
+                            <span class="material-symbols-outlined text-white" style="font-size:2.5rem">
+                                menu
+                            </span>
+                        </div>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto" >
+                            <li class="nav-item align-items-center d-flex">
+                                <a href="" class="nav-link btn btn-dark align-items-center d-flex  rounded-circle p-1 disabled" style="background: #000">
+                                    <span class="material-symbols-outlined" style="font-size: 1.2em;margin-left:3px">
+                                        arrow_back_ios
+                                        </span>
+                                </a>
+                            </li>
+                            <li class="nav-item align-items-center d-flex">
+                                <a href="" class="nav-link btn btn-dark align-items-center d-flex rounded-circle p-1 disabled" style="background: #000">
+                                    <span class="material-symbols-outlined " style="font-size: 1.2em">
+                                        arrow_forward_ios
+                                        </span></a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown navbar-nav  mb-2 mb-lg-0 ms-auto  text-white">
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="" class="nav-link upgrade">Upgrade</a>
+                            </li>
+                            <li class="nav-item dropdown d-flex align-items-center">
+                                <a class="nav-link dropdown-toggle text-white user_container " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-user fa-xl me-1"></i> {{ auth()->user()->username }}
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-md-end dropdown-menu-md-start" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="/dashboard">
+                                      <i class="fa-solid fa-pager"></i> Dashboard </a>
+                                   </li>
+                                   <li><hr class="dropdown-divider"></li>
+                                   <li>
+                                      <form action="/logout" method="post">
+                                         @csrf
+                                         <button type="submit" class="dropdown-item"> <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</button>
+                                      </form>
+                                   </li>   
+                                </ul>
+                              </li>    
+                         
+                        </ul>
+                        
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            @else
+
             <div class="header"> 
                 <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#101010">
                     <div class="container-fluid">
@@ -134,34 +194,37 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto  text-white">
+                         
                             <li class="nav-item">
-                                 <a class="nav-link " aria-current="page" href="#">Premium</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Support</a>
-                            </li>
-                    
-                            <li class="nav-item">
-                                <a class="nav-link ">Download</a>
-                            </li>
-                            <li class="nav-item">
-                                 <a href="" class=" nav-link disabled text-white">|</a>
-                            </li>
+                                <a class="nav-link " aria-current="page" href="#">Premium</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">Support</a>
+                           </li>
+                   
+                           <li class="nav-item">
+                               <a class="nav-link ">Download</a>
+                           </li>
+                           <li class="nav-item">
+                                <a href="" class=" nav-link disabled text-white">|</a>
+                           </li>
                             <li class="nav-item">
                                 <a href="/register" class="nav-link">Sign Up</a>
                             </li>
+
                             <li class="nav-item">
                                 <a href="/login" class="nav-link btn btn-dark login">Log in</a>
                             </li>
-    
+                        
                         </ul>
                         
                         </div>
                     </div>
                 </nav>
             </div>
+            @endauth
 
-            <main class="main" style="background-color:#1d1d1d">
+            <main class="main" style="background-color:#202020">
                 <!-- Page content-->
                     @yield('konten')
                 
