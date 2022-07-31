@@ -13,6 +13,15 @@
       </div>
    </div>
    <p class="text-center pt-5"><strong>To continue, log in to Spotify.</strong></p>
+   @if (session('loginError'))
+      <div class="container_alert">
+         <div class="alert alert-danger alert-dismissible fade show loginError" >
+            {{ session('loginError') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+  
+   @endif
    <div class=" login_container">
          <a href="" class="btn_login btn btn-primary " style="background-color: #3b5998 !important; color:#fff !important"><i class="fa-brands fa-facebook-f px-2"></i>  CONTINUE WITH FACEBOOK</a>
          <a href="" class="btn_login btn btn-primary"  style="background-color: #000 !important; color:#fff !important"><i class="fa-brands fa-apple px-2"></i>  CONTINUE WITH APPLE</a>
@@ -22,17 +31,28 @@
             <p class="text-center  ">OR</p>
          </div>
          <div class="divider_signIn"></div>   
+         
    </div>
    <div class="form_container">
-
-      <form action="" class="form">
+      <form action="/login" method="post" class="form">
+         @csrf
          <div class="mb-1">
             <label for="username"><strong>Email address or username</strong></label>
-            <input type="text" name="username" id="username" class="form-control mt-2 mb-2" placeholder="Email address or username"> 
+            <input type="text" name="username" id="username" class="form-control mt-2 mb-2 @error('username') is-invalid @enderror" value="{{ old('username') }}" placeholder="Email address or username" autofocus required> 
+            @error('username')
+            <div class="invalid-feedback">
+               {{ $message }}
+            </div>
+            @enderror
          {{-- </div>
          <div> --}}
-            <label for="username"><strong>Password</strong></label> 
-            <input type="text" name="username" id="username" class="form-control mt-2 " placeholder="Password"> 
+            <label for="password"><strong>Password</strong></label> 
+            <input type="password" name="password" id="password" class="form-control mt-2 @error('password') is-invalid @enderror" placeholder="Password" required> 
+            @error('password')
+               <div class="invalid-feedback">
+                  {{ $message }}
+               </div>
+            @enderror
          </div>
          <h6>Forgot your password?</h6>
          <div class="row align-items-center">
@@ -40,7 +60,7 @@
                <input type="checkbox" name="" id=""> remember me
             </div>
             <div class="col-md-3 d-flex justify-content-end mt-2">
-               <a href="" class="btn btn-success sign_in"><span>LOG IN</span></a>
+               <button type="submit" class="btn btn-success sign_in"><span>LOG IN</span></button>
             </div>
          </div>
          <div class="divider_login"></div>   
