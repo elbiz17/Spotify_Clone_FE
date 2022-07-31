@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SpotifyController;
 use App\Http\Controllers\LoginSpotifyController;
 use App\Http\Controllers\RegisterSpotifyController;
+use App\Http\Controllers\DashboardSpotifyController;
 
 
 
@@ -22,10 +23,15 @@ use App\Http\Controllers\RegisterSpotifyController;
 //     return view('welcome');
 // });
 
-Route::get('/', [SpotifyController::class, 'index']);
+Route::get('/', [SpotifyController::class, 'index'])->name('home');
 
-Route::get('/login', [LoginSpotifyController::class, 'index']);
+Route::get('/login', [LoginSpotifyController::class, 'index'])->middleware('guest');  
+Route::post('/login', [LoginSpotifyController::class, 'authenticate']);
+Route::post('/logout', [LoginSpotifyController::class, 'logout']);  
 
-Route::get('/register', [RegisterSpotifyController::class, 'index']);
+Route::get('/register', [RegisterSpotifyController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterSpotifyController::class, 'store']);
 
-Route::get('/create', [SpotifyController::class, 'create']);
+Route::get('/dashboard', [DashboardSpotifyController::class, 'index'])->middleware('auth');
+
+// Route::get('/create', [SpotifyController::class, 'create']);
