@@ -52,6 +52,47 @@
 
 /* end css login */
 
+/* css upgrade */
+.upgrade{
+  background-color: #202020!important;
+  width: 98px;
+  display: flex;
+  align-content: center;
+  line-height: 15px !important;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 30px !important;
+  color: white !important;
+  /* font-family: "Circular Spotify Tx T Light"; */
+
+  font-weight: 500 !important;
+  font-size: 14px !important;
+
+}
+.user_container{
+  background-color: #000!important;
+  width: 98px;
+  
+  display: flex;
+  align-content: center;
+  line-height: 15px !important;
+  /* border: 0.2px solid white; */
+  text-align: center;
+  border-radius: 30px !important;
+  color: white !important;
+  /* font-family: "Circular Spotify Tx T Light"; */
+
+  font-weight: 500 !important;
+  font-size: 14px !important;
+
+}
+
+
+
+/* end of css upgrade */
+
+
+
 
 /* css sidebar */
 

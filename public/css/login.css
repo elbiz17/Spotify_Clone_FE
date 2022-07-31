@@ -5,6 +5,15 @@
    margin: 0;
 }
 
+.loginError{
+   width: 450px !important;
+   
+}
+.container_alert{
+   display: flex;
+   padding: 0 20px 0;
+   justify-content: center;
+}
 .btn_login{
    width: 450px ;
    margin: auto;
